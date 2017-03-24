@@ -117,12 +117,18 @@ POOLING_GEOMETRY_DATA = [
      (1, 3, 3), # strides
      [True], # padding flag
      [[[[ 21,   23],
-       [ 33,   35]]]]), # result
+        [ 33,   35]]]]), # result
     ([1, 1, 8, 8],
      (1, 4, 4),
      (1, 5, 5),
      [False],
-     [[[[ 27 ]]]])
+     [[[[ 27 ]]]]),
+    ([1, 1, 6, 6],
+     (1, 5, 5),
+     (1, 3, 3),
+     [True, False],
+     [[[[ 22],
+        [ 34]]]])
 ]
 # the pooling geometry test also tests convolution geometry since they go through the same path
 # in the CPU code
